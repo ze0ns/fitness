@@ -68,6 +68,12 @@
     },
     "bodyMass": {
       "type": "biginteger"
+    },
+    "body_histories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::body-history.body-history",
+      "mappedBy": "users"
     }
   }
 }

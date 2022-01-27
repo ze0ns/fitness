@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "plans",
+  "info": {
+    "singularName": "plan",
+    "pluralName": "plans",
+    "displayName": "plan",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    },
+    "date": {
+      "type": "date"
+    },
+    "exercise": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::exercises.exercises"
+    },
+    "replay": {
+      "type": "integer"
+    },
+    "counter": {
+      "type": "integer"
+    },
+    "weight": {
+      "type": "decimal"
+    },
+    "comments": {
+      "type": "text"
+    },
+    "analyze": {
+      "type": "enumeration",
+      "enum": [
+        "plan",
+        "fact"
+      ],
+      "required": true
+    }
+  }
+}

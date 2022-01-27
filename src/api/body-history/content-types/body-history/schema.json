@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "body_histories",
+  "info": {
+    "singularName": "body-history",
+    "pluralName": "body-histories",
+    "displayName": "BodyHistory",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "users": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "body_histories"
+    },
+    "date": {
+      "type": "date"
+    },
+    "height": {
+      "type": "integer"
+    },
+    "press": {
+      "type": "integer"
+    },
+    "breast": {
+      "type": "integer"
+    }
+  }
+}

@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- *  body-param controller
+ *  plan controller
  */
 
 const { createCoreController } = require('@strapi/strapi').factories;
 
-module.exports = createCoreController('api::body-param.body-param');
+module.exports = createCoreController('api::plan.plan');

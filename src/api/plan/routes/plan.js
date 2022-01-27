@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * body-param router.
+ * plan router.
  */
 
 const { createCoreRouter } = require('@strapi/strapi').factories;
 
-module.exports = createCoreRouter('api::body-param.body-param');
+module.exports = createCoreRouter('api::plan.plan');

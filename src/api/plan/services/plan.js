@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * body-param service.
+ * plan service.
  */
 
 const { createCoreService } = require('@strapi/strapi').factories;
 
-module.exports = createCoreService('api::body-param.body-param');
+module.exports = createCoreService('api::plan.plan');

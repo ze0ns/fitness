@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "exercisess",
+  "info": {
+    "singularName": "exercises",
+    "pluralName": "exercisess",
+    "displayName": "exercises"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true
+    },
+    "descriptions": {
+      "type": "text"
+    },
+    "videos": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}
